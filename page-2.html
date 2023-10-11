@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}@media only screen and (max-width: 768px){.hamburger.active .bar:nth-child(2){opacity:0;}.hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger.active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
+* { box-sizing: border-box; } body {margin: 0;}.hamburger{display:none;}.bar{display:block;width:25px;height:3px;margin-top:5px;margin-right:auto;margin-bottom:5px;margin-left:auto;transition-behavior:normal;transition-duration:0.3s;transition-timing-function:ease-in-out;transition-delay:0s;transition-property:all;background-color:rgb(16, 16, 16);}.nav-menu{z-index:2000;}.nav-link{font-size:1.1rem;}@media only screen and (max-width: 992px){.hamburger{display:block;cursor:pointer;}.hamburger.active .bar:nth-child(2){opacity:0;}.hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger.active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}@media only screen and (max-width: 768px){.nav-menu{display:none;position:absolute;left:-100%;top:105%;flex-direction:column;background-color:rgb(255, 255, 255);width:100%;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;text-align:center;transition-behavior:normal;transition-duration:0.7s;transition-timing-function:ease;transition-delay:0s;transition-property:all;padding-top:10px;padding-right:0px;padding-bottom:10px;padding-left:0px;box-shadow:rgba(0, 0, 0, 0.05) 0px 10px 27px;row-gap:0px !important;column-gap:0px !important;}.nav-menu.active{display:block;left:0px;}.nav-item{margin-top:10px;margin-right:0px;margin-bottom:10px;margin-left:0px;}.hamburger{display:block;cursor:pointer;}.hamburger.active .bar:nth-child(2){opacity:0;}.hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger.active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
 
 </style>
 
@@ -79,9 +79,49 @@
 		<html>
  <head></head>
  <body>
-  <div>
-   Main page
+  <div custom_block_template="true" block_id="customBlockTemplate_test_test" id="i37n1l-3" draggable="true" class="gjs-selected">
+   <nav id="il2jku-3" draggable="true" class="px-3 py-2 d-flex justify-content-between align-items-center position-relative border">
+    <h1 id="iofk7u-3" draggable="true"><a id="i4g0w3-3" draggable="true" href="#" class="nav-logo fw-bold text-dark text-decoration-none fs-2">Shopiana</a></h1>
+    <ul id="igq7b4-3" draggable="true" class="nav-menu d-flex justify-content-between align-items-center mb-0 gap-4">
+     <li id="iznj7i-3" draggable="true" class="nav-item list-unstyled text-decoration-none"><a id="irvou3-3" draggable="true" page="page://KT7OGnjpLKMZOqAt5" name="Page 2" slug="page-2" href="//amy-shopiana-webbuilder-production.vercel.app/page-2.html" link-type="page" class="nav-link text-dark">Services</a></li>
+     <li id="iaky9l-3" draggable="true" class="nav-item list-unstyled text-decoration-none"><a id="i0qh2v-3" draggable="true" href="#" class="nav-link text-dark">Blog</a></li>
+     <li id="ik4n01-3" draggable="true" class="nav-item list-unstyled text-decoration-none"><a id="icyvoj-3" draggable="true" href="#" class="nav-link text-dark">About</a></li>
+     <li id="idt7ch-3" draggable="true" class="nav-item list-unstyled text-decoration-none"><a id="ixy7qm-3" draggable="true" href="#" class="nav-link text-dark">Contact</a></li>
+    </ul>
+    <div id="ik2ola-3" draggable="true" class="hamburger">
+     <span id="ivk0xh-3" draggable="true" class="bar"></span><span id="icr5ss-3" draggable="true" class="bar"></span><span id="i2o125-3" draggable="true" class="bar"></span>
+    </div>
+   </nav>
   </div>
+  <div custom_block_template="true" block_id="customBlockTemplate_test_test" id="i37n1l-4" draggable="true" class="gjs-selected">
+   <nav id="il2jku-4" draggable="true" class="px-3 py-2 d-flex justify-content-between align-items-center position-relative border">
+    <h1 id="iofk7u-4" draggable="true"><a id="i4g0w3-4" draggable="true" href="#" class="nav-logo fw-bold text-dark text-decoration-none fs-2">Shopiana</a></h1>
+    <ul id="igq7b4-4" draggable="true" class="nav-menu d-flex justify-content-between align-items-center mb-0 gap-4">
+     <li id="iznj7i-4" draggable="true" class="nav-item list-unstyled text-decoration-none"><a page="page://N5WXtfxAwl5XwQaH" name="index" slug="index" href="//amy-shopiana-webbuilder-production.vercel.app/index.html" link-type="page" id="irvou3-4" class="nav-link text-dark">Services</a></li>
+     <li id="iaky9l-4" draggable="true" class="nav-item list-unstyled text-decoration-none"><a id="i0qh2v-4" draggable="true" href="#" class="nav-link text-dark">Blog</a></li>
+     <li id="ik4n01-4" draggable="true" class="nav-item list-unstyled text-decoration-none"><a id="icyvoj-4" draggable="true" href="#" class="nav-link text-dark">About</a></li>
+     <li id="idt7ch-4" draggable="true" class="nav-item list-unstyled text-decoration-none"><a id="ixy7qm-4" draggable="true" href="#" class="nav-link text-dark">Contact</a></li>
+    </ul>
+    <div id="ik2ola-4" draggable="true" class="hamburger">
+     <span id="ivk0xh-4" draggable="true" class="bar"></span><span id="icr5ss-4" draggable="true" class="bar"></span><span id="i2o125-4" draggable="true" class="bar"></span>
+    </div>
+   </nav>
+  </div>
+  <script>var items = document.querySelectorAll('#i37n1l-3, #i37n1l-4');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+// console.log("navbar one", this);
+        const hamburger = this.querySelectorAll(".hamburger");
+        const navMenu = this.querySelectorAll(".nav-menu");
+        for (let i = 0; i < hamburger.length; i++) {
+            hamburger[i].addEventListener("click", function () {
+                hamburger[i].classList.toggle("active");
+                navMenu[i].classList.toggle("active");
+            });
+        }
+        ;
+}.bind(items[i]))();
+          }</script>
  </body>
 </html>
 </html>
