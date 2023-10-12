@@ -71,13 +71,52 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}@media only screen and (max-width: 992px){.hamburger.active .bar:nth-child(2){opacity:0;}.hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger.active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}@media only screen and (max-width: 768px){.hamburger.active .bar:nth-child(2){opacity:0;}.hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger.active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
+* { box-sizing: border-box; } body {margin: 0;}.hamburger{display:none;}.bar{display:block;width:25px;height:3px;margin-top:5px;margin-right:auto;margin-bottom:5px;margin-left:auto;transition-behavior:normal;transition-duration:0.3s;transition-timing-function:ease-in-out;transition-delay:0s;transition-property:all;background-color:rgb(16, 16, 16);}.nav-link{font-size:1.1rem;}@media only screen and (max-width: 992px){.hamburger{display:block;cursor:pointer;}.hamburger.active .bar:nth-child(2){opacity:0;}.hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger.active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}@media only screen and (max-width: 768px){.nav-menu.active{display:block;left:0px;}.nav-item{margin-top:10px;margin-right:0px;margin-bottom:10px;margin-left:0px;}.hamburger{display:block;cursor:pointer;}.hamburger.active .bar:nth-child(2){opacity:0;}.hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger.active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
 
 </style>
 
 </head>
 		<html>
  <head></head>
- <body id="i9tc" class="pb-4 bg-secondary"></body>
+ <body id="i9tc" class="pb-4 bg-secondary">
+  <div id="ixrxng">
+   <nav class="navbar bg-white navbar-expand-lg navbar-light border">
+    <div class="container-fluid">
+     <a href="#" class="navbar-brand">Shopiana</a>
+     <div class="hamburger">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+     </div>
+     <div id="collapseId" class="collapse navbar-collapse">
+      <div class="navbar-nav">
+       <a href="#" class="nav-item nav-link active">Home</a><a href="#" class="nav-item nav-link">Profile</a>
+       <div class="nav-item dropdown">
+        <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">Messages</a>
+        <div class="dropdown-menu">
+         <a href="#" class="dropdown-item">Inbox</a><a href="#" class="dropdown-item">Sent</a><a href="#" class="dropdown-item">Drafts</a>
+        </div>
+       </div><a href="#" class="nav-item nav-link">About</a>
+      </div>
+      <div class="navbar-nav ms-auto">
+       <a href="#" class="nav-item nav-link">Login</a>
+      </div>
+     </div>
+    </div>
+   </nav>
+  </div>
+  <script>var items = document.querySelectorAll('#ixrxng');
+          for (var i = 0, len = items.length; i < len; i++) {
+            (function(){
+const hamburger = this.querySelectorAll(".hamburger");
+    const navMenu = this.querySelectorAll(".navbar-collapse");
+    for (let i = 0; i < hamburger.length; i++) {
+        hamburger[i].addEventListener("click", function () {
+            hamburger[i].classList.toggle("active");
+            navMenu[i].classList.toggle("show");
+        });
+    }
+    ;
+}.bind(items[i]))();
+          }</script>
+ </body>
 </html>
 </html>
